@@ -11,12 +11,8 @@ for i in 0...(numbersArray.count - 2) { //n个数进行排序，只要进行（n
     
         if numbersArray[j] < numbersArray[j + 1] {
             
-            var temp = numbersArray[j]
-            
-            numbersArray[j] = numbersArray[j + 1]
-            
-            numbersArray[j + 1] = temp;
-            
+            swap(&numbersArray[j], &numbersArray[j + 1])
+    
         }
     }
     
